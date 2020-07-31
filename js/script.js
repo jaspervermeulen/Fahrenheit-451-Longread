@@ -2,6 +2,7 @@
 
   const bigCityImg = document.querySelector('.beginning__img');
   const smallCityImg = document.querySelector('.society__city');
+  const littleCityImg = document.querySelector('.power__city');
 
   const navListImg = document.querySelector('.nav__list--link--img')
 
@@ -17,23 +18,70 @@
   const btnBoots = document.querySelector('.btn-boots')
   let bootsStatus = false;
 
-
+  let audio = document.getElementById("audio");
   let soundStatus = true;
 
   const init = () => {
+
+
+    swal({
+      title: "Mag er achtergrond muziek afgespeeld worden?",
+      icon: "info",
+      buttons: ["Liever niet", "Tuurlijk!"],
+    })
+    .then((willDelete) => {
+      if (willDelete) {
+        audio.play()
+        soundStatus === true;
+      } else {
+        audio.pause();
+        soundStatus === false;
+        handleSoundToggle();
+      }
+    });
+
+
+   
     bigCityImg.addEventListener('click', handleClickBigCityImg);
     smallCityImg.addEventListener('click', handleClickSmallCityImg);
-    navListImg.addEventListener('click', handleSoundToggle)
+    littleCityImg.addEventListener('click', handleClickLittleCityImg);
     document.querySelector('.intro__scroller').addEventListener('click', handleScrollClick)
-
-
     btnHelmet.addEventListener('click', handleClickHelmet)
     btnVest.addEventListener('click', handleClickVest)
     btnPants.addEventListener('click', handleClickPants)
     btnBoots.addEventListener('click', handleClickBoots)
+    document.querySelector('.footernav__list--link-scroll').addEventListener('click', handleScrollToTop)
+    navListImg.addEventListener('click', handleSoundToggle)
   }
 
+  const handleSoundToggle = () => {
+    soundStatus = !soundStatus;
+    
+    
+    if(soundStatus === false){
+      audio.pause()
+      navListImg.src = "assets/svg/soundOff.svg";
+    }else if(soundStatus === true){
+      audio.play()
+      navListImg.src = "assets/svg/soundOn.svg";
+    }
+
+  }
+
+  const handleClickLittleCityImg = () => {
+    if(littleCityImg.id === "noFire"){
+      littleCityImg.src = "assets/png/littleCity.png";
+      littleCityImg.id = "Fire"
+    }else if(littleCityImg.id === "Fire"){
+      littleCityImg.src = "assets/gif/cityFire.gif";
+      littleCityImg.id = "noFire"
+    }
+  }
+
+
+
   const handleClickPants = () => {
+    
     pantsStatus = !pantsStatus;
     if(pantsStatus === true){
       document.querySelector('.firemen__pants').style.display = "block";
@@ -87,7 +135,15 @@
 
   const handleScrollClick = () => {
     window.scrollTo({
-      top: 850,
+      top: 860,
+      left: 0,
+      behavior: 'smooth'
+    });
+  }
+
+  const handleScrollToTop = () => {
+    window.scrollTo({
+      top: 0,
       left: 0,
       behavior: 'smooth'
     });
@@ -113,17 +169,7 @@
     }
   }
 
-  const handleSoundToggle = () => {
-    soundStatus = !soundStatus;
-    console.log(soundStatus);
-
-    if(soundStatus === false){
-      navListImg.src = "assets/svg/soundOff.svg";
-    }else if(soundStatus === true){
-      navListImg.src = "assets/svg/soundOn.svg";
-    }
-
-  }
-
   init();
 }
+
+

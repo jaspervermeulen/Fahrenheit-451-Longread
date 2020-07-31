@@ -20,6 +20,17 @@
   --bigFW: 700;
 }
 
+.canvas {
+  background-color: red;
+}
+
+.cta {
+  position: absolute;
+  top: 10;
+  right: 10rem;
+  user-select: none;
+}
+
 *,
 ::before,
 ::after {
@@ -43,7 +54,14 @@ a {
   display: none;
 }
 
-p::selection { background-color: red; }
+p::selection {
+  background-color: red;
+}
+
+.selectDisable {
+  user-select: none;
+}
+
 
 /*** INTRO **************************************************/
 
@@ -71,14 +89,19 @@ p::selection { background-color: red; }
   font-weight: var(--mediumFW);
   text-transform: uppercase;
   opacity: 0.4;
+  animation: 2s fadeIn;
 }
 
-.nav__list--link--img{
+.nav__list--link-hover:hover{
+  opacity: 1;
+}
+
+.nav__list--link--img {
   padding: 2rem;
   cursor: pointer;
 }
 
-.link__special{
+.link__special {
   padding: 2rem;
 }
 
@@ -203,65 +226,66 @@ p::selection { background-color: red; }
   width: 97.8rem;
 }
 
-.society__wrapper--text-1{
+.society__wrapper--text-1 {
   margin-bottom: 2.2rem;
 }
 
 /**** FIREMEN *************************/
 
-.firemen{
+.firemen {
   width: 145rem;
   margin: 0 auto;
   display: grid;
   grid-template-areas:
-  'text person'
-  'fire person';
+    'text person'
+    'fire person';
 }
 
-.firemen__wrapper{
+.firemen__wrapper {
   grid-area: text;
   align-self: center;
   margin-top: 12rem;
 }
 
-.firemen__person-wrapper{
+.firemen__person-wrapper {
   grid-area: person;
   margin-top: -8rem;
 }
 
-.firemen__person{
+.firemen__person {
   user-select: none;
 }
 
-.firemen__wrapper--options{
+.firemen__wrapper--options {
   margin-top: 6rem;
+  display: flex;
 }
 
-.firemen__fire{
+.firemen__fire {
   grid-area: fire;
   align-self: flex-end;
   margin-bottom: 10rem;
   user-select: none;
 }
 
-.firemen__wrapper--text{
+.firemen__wrapper--text {
   font-size: var(--regularFS);
   font-weight: var(--regularFW);
   line-height: var(--regularLH);
   width: 97.8rem;
 }
 
-.options__wrapper--label{
+.options__wrapper--label {
   font-size: 2.8rem;
 }
 
-.firemen__person-wrapper{
+.firemen__person-wrapper {
   position: relative;
   top: 0;
   left: 0;
 }
 
-.firemen__alignment{
+.firemen__alignment {
   position: absolute;
   top: 0;
   left: 0;
@@ -269,48 +293,54 @@ p::selection { background-color: red; }
   user-select: none;
 }
 
-.options__wrapper{
+.options__wrapper {
   background-color: black;
   color: white;
   border: 0.2rem solid white;
-  padding: 0.5rem 1rem;
+  padding: 1rem 2rem;
   outline: none;
   cursor: pointer;
   margin-left: 2.6rem;
+  width: 18rem;
+  height: 26rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.firemen__vest{
+.firemen__vest {
   z-index: 2;
 }
 
-.firemen__pants{
+.firemen__pants {
   z-index: 1;
 }
 
-.firemen__boots{
+.firemen__boots {
   z-index: 0;
 }
 
 /**** FIREMEN *************************/
 
-.power{
+.power {
   display: grid;
   grid-template-columns: 62rem 1fr 1fr;
   grid-template-rows: 30rem 1fr 30rem;
-  grid-template-areas: 
-  "first first 2"
-  "city second 1"
-  "city third third";
+  grid-template-areas:
+    'first first 2'
+    'city second 1'
+    'city third third';
 }
 
-.power__first{
+.power__first {
   grid-area: first;
   justify-self: center;
   align-self: center;
   width: 97.8rem;
 }
 
-.power__second{
+.power__second {
   grid-area: second;
   width: 52.1rem;
   text-align: center;
@@ -319,25 +349,25 @@ p::selection { background-color: red; }
   margin-bottom: 6rem;
 }
 
-.power__third{
+.power__third {
   grid-area: third;
   width: 97.8rem;
   margin-left: 4rem;
 }
 
-.power__city{
+.power__city {
   grid-area: city;
   user-select: none;
 }
 
-.power__2{
+.power__2 {
   user-select: none;
   grid-area: 2;
   justify-self: flex-end;
   margin-right: 4rem;
 }
 
-.power__1{
+.power__1 {
   user-select: none;
   grid-area: 1;
   justify-self: flex-start;
@@ -345,18 +375,123 @@ p::selection { background-color: red; }
   margin-bottom: 4rem;
 }
 
-.power__text{
+.power__text {
   font-size: var(--regularFS);
   font-weight: var(--regularFW);
   line-height: var(--regularLH);
 }
 
-.power__text--big{
+.power__text--big {
   font-size: var(--bigFS);
   font-weight: var(--bigFW);
   line-height: var(--bigLH);
 }
 
+/**** FINAL *************************/
+
+.final {
+  display: flex;
+  width: 160rem;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12rem;
+  margin-bottom: 20rem;
+}
+
+.final__img{
+  user-select: none;
+}
+
+.final__wrapper--text{
+  font-size: var(--regularFS);
+  font-weight: var(--regularFW);
+  line-height: var(--regularLH);
+  width: 97.8rem;
+}
+
+.final__wrapper--quote{
+  font-size: var(--bigFS);
+  font-weight: var(--bigFW);
+  line-height: var(--bigLH);
+  margin: 6rem 0;
+  margin-left: -6rem;
+}
+
+/**** END *************************/
+
+.end{
+  display: flex;
+  width: 149rem;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.end__wrapper--title{
+  font-size: 3.6rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.end__wrapper--text{
+  font-size: var(--regularFS);
+  font-weight: var(--regularFW);
+  line-height: var(--regularLH);
+  width: 50rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.end__wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.end__wrapper--link{
+  font-size: 2rem;
+  padding: 2rem 2rem;
+  border: 0.2rem solid white;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.end__wrapper--link:hover{
+  background-color: white;
+  color: black;
+}
+
+/**** END *************************/
+
+.footer{
+  width: 168rem;
+  margin: 0 auto;
+}
+
+.footernav{
+  margin: 16rem 0 10rem 0;
+}
+
+.footernav__list{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footernav__list--link{
+  padding: 2rem;
+  font-size: var(--mediumFS);
+  font-weight: var(--mediumFW);
+  text-transform: uppercase;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.footernav__list--link:hover{
+  opacity: 1;
+}
 
 /**** KEYFRAMES *************************/
 
@@ -369,5 +504,14 @@ p::selection { background-color: red; }
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.4;
   }
 }

@@ -13,6 +13,11 @@
   </head>
   <body>
     <main>
+
+
+      <audio id="audio" src="assets/audio/bgtrack.mp3"></audio>
+      <!-- audio from https://freemusicarchive.org/genre/novelty -->
+      <audio id="audioClick" src="assets/audio/click.mp3"></audio>
       <h1 class="hidden">Fahrenheit 451</h1>
 
       <section class="intro">
@@ -20,15 +25,15 @@
         <nav class="intro__nav">
           <ul class="nav__list">
             <li class="nav__list--item">
-              <a class="nav__list--link link__special" href="#">Humo</a>
+              <a class="nav__list--link nav__list--link-hover link__special" href="#">Humo</a>
             </li>
             <li class="nav__list--item">
               <p class="nav__list--link">Fahrenheit 451</p>
             </li>
             <li class="nav__list--item">
-              <a class="nav__list--link"
+              <a class="nav__list--link nav__list--link-hover"
                 ><img
-                  class="nav__list--link--img"
+                  class="nav__list--link--img "
                   src="assets/svg/soundOn.svg"
                   alt="Change Sound Symbol"
                   draggable="false"
@@ -38,7 +43,7 @@
         </nav>
         <div class="intro__title">
           <img
-            class="intro__title--img"
+            class="intro__title--img selectDisable"
             src="assets/gif/title.gif"
             alt="Title Gif"
             draggable="false"
@@ -74,6 +79,7 @@
           alt="City Skyline"
           draggable="false"
         />
+        <img draggable="false" class="cta" src="assets/gif/CTA.gif" alt="Set me on fire CTA">
       </section>
 
       <section class="confusion">
@@ -110,7 +116,7 @@
         />
         <img
           class="society__fire"
-          src="assets/png/fire.png"
+          src="assets/gif/fire.gif"
           alt="Fire Stroke"
           draggable="false"
         />
@@ -141,15 +147,19 @@
           </p>
           <div class="firemen__wrapper--options">
             <button class="options__wrapper btn-helmet">
+              <img class="selectDisable" draggable="false" src="assets/png/person/helmet.png" alt="Person Helmet" width="150">
               <p class="options__wrapper--label">Helm</p>
             </button>
             <button class="options__wrapper btn-vest">
+              <img class="selectDisable" draggable="false" src="assets/png/person/vest.png" alt="Person Vest" width="150">
               <p class="options__wrapper--label">Vest</p>
             </button>
             <button class="options__wrapper btn-pants">
+              <img class="selectDisable" draggable="false" src="assets/png/person/pants.png" alt="Person Pants" height="200">
               <p class="options__wrapper--label">Broek</p>
             </button>
             <button class="options__wrapper btn-boots">
+              <img class="selectDisable" draggable="false" src="assets/png/person/boots.png" alt="Person Boots" width="150">
               <p class="options__wrapper--label">Boots</p>
             </button>
           </div>
@@ -161,7 +171,7 @@
           <img draggable="false" class="firemen__pants firemen__alignment" src="assets/png/person_pants.png" alt="Person Pants">
           <img draggable="false" class="firemen__boots firemen__alignment" src="assets/png/person_boots.png" alt="Person Boots">
         </div>
-        <img class="firemen__fire" src="assets/png/fire.png" alt="Fire Stroke" />
+        <img class="firemen__fire" src="assets/gif/fire.gif" alt="Fire Stroke" />
       </section>
 
       <section class="power">
@@ -175,18 +185,56 @@
         <p class="power__third power__text">
           Op de plaats van de verbranding is hij geschokt toen de eigenaar van de boeken, een oudere vrouw, weigert haar huis te verlaten. In plaats van haar huis te verlaten steekt ze zichtzelf in brand samen met haar grote collectie boeken. Na deze gebeurtenis vraagt Montag zich af of er geluk en vrede gevonden kan worden in deze boeken. Misschien is dit de reden waarom deze mensen zoveel moeite doen om hun boeken te beschermen.
         </p>
-        <img draggable="false" class="power__city" src="assets/gif/cityFire.gif" alt="Small City Fire">
-        <img draggable="false" class="power__2" src="assets/png/2of3fire.png" alt="Fire Stroke">
-        <img draggable="false" class="power__1" src="assets/png/1of3fire.png" alt="Fire Stroke">
+        <img id="noFire" draggable="false" class="power__city" src="assets/png/littleCity.png" alt="Small City Fire">
+        <img draggable="false" class="power__2" src="assets/gif/2of3fire.gif" alt="Fire Stroke">
+        <img draggable="false" class="power__1" src="assets/gif/1of3fire.gif" alt="Fire Stroke">
       </section>
 
-      <section></section>
+      <section class="final">
+        <h2 class="hidden">Final</h2>
+        <div class="final__wrapper">
+          <p class="final__wrapper--text">
+            Montag keert terug naar huis, hij valt in slaap met de oudere vrouw aan zijn gedachten. De afgelopen tien jaar, hij had gedacht dat hij de samenleving aan het dienen was als brandweerman, maar nu beseft hij dat hij een instrument van vernietiging is geworden. 
+          </p>
+          <p class="final__wrapper--quote">
+            “ Wat is er van mij geworden? ”
+          </p>
+          <p class="final__wrapper--text">
+            Die nacht verneemt Montag dat zijn vriendin Clarisse overleden is door een roekeloze auto meer dan een week geleden. Hij valt weer in slaap met een nog erger gevoel dan eerder en met een gestolen boek verborgen onder zijn kussen.
+          </p>
+        </div>
+        <img class="final__img" draggable="false" src="assets/gif/fireP.gif" alt="Fire Party">
+      </section>
 
-      <section></section>
+      <section class="end">
+        <h2 class="hidden">The End</h2>
+        <img draggable="false" class="end__img-left selectDisable" src="assets/gif/bookFire.gif" alt="Book On Fire">
+        <div class="end__wrapper">
+          <p class="end__wrapper--title">The End</p>
+          <p class="end__wrapper--text">
+            Nieuwgierig naar het volledige verhaal? <br>
+            Ontdek deze dan nu in papieren of ebook versie op de Humo Boekenshop!
+          </p>
+          <a class="end__wrapper--link" href="#">Humo Boekenshop</a>
+        </div>
+        <img draggable="false" class="end__img-right selectDisable" src="assets/gif/bookFire.gif" alt="Book On Fire">
+      </section>
     </main>
 
-    <footer></footer>
+    <footer class="footer">
+      <nav class="footernav">
+        <ul class="footernav__list">
+          <li class="footernav__list--item">
+            <a class="footernav__list--link" href="#">Humo</a>
+          </li>
+          <li class="footernav__list--item">
+            <a class="footernav__list--link footernav__list--link-scroll">Naar boven ↑</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
 
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
