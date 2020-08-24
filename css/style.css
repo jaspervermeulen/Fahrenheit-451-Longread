@@ -136,6 +136,11 @@ p::selection {
   align-self: flex-end;
 }
 
+.intro__title--img{
+  width: 107.6rem;
+  height: 15.1rem;
+}
+
 /**** Beginning *************************/
 
 .beginning {
@@ -161,6 +166,8 @@ p::selection {
 .beginning__img {
   margin-top: -12rem;
   user-select: none;
+  width: 165.6rem;
+  height: 67.1rem;
 }
 
 /**** CONFUSION *************************/
@@ -188,6 +195,8 @@ p::selection {
 .confusion__img {
   margin-top: 8rem;
   user-select: none;
+  width: 27.7rem;
+  height: 52.1rem;
 }
 
 /**** SOCIETY *************************/
@@ -204,6 +213,8 @@ p::selection {
 .society__city {
   grid-area: city;
   user-select: none;
+  width: 68.8rem;
+  height: 83.8rem;
 }
 
 .society__fire {
@@ -254,6 +265,8 @@ p::selection {
 
 .firemen__person {
   user-select: none;
+  width: 37.7rem;
+  height: 105.6rem;
 }
 
 .firemen__wrapper--options {
@@ -291,6 +304,8 @@ p::selection {
   left: 0;
   display: none;
   user-select: none;
+  width: 37.7rem;
+  height: 105.6rem;
 }
 
 .options__wrapper {
@@ -321,7 +336,7 @@ p::selection {
   z-index: 0;
 }
 
-/**** FIREMEN *************************/
+/**** POWER *************************/
 
 .power {
   display: grid;
@@ -358,6 +373,8 @@ p::selection {
 .power__city {
   grid-area: city;
   user-select: none;
+  width: 62rem;
+  height: 61.5rem;
 }
 
 .power__2 {
@@ -401,6 +418,8 @@ p::selection {
 
 .final__img{
   user-select: none;
+  width: 54.8rem;
+  height: 41.4rem;
 }
 
 .final__wrapper--text{
@@ -464,6 +483,11 @@ p::selection {
   color: black;
 }
 
+.end__img-left{
+  width: 33.2rem;
+  height: 38.8rem;
+}
+
 /**** END *************************/
 
 .footer{
@@ -513,5 +537,837 @@ p::selection {
   }
   100% {
     opacity: 0.4;
+  }
+}
+
+@media screen and (max-width: 1800px) {
+
+  .intro, .beginning{
+    width: 150rem;
+  }
+
+  .beginning__img {
+    margin-top: -2rem;
+    width: 125.6rem;
+    height: 47.1rem;
+  }
+
+  .society {
+    width: 150rem;
+  }
+
+  .society__city {
+    width: 48.8rem;
+    height: 63.8rem;
+  }
+
+  .power {
+    grid-template-columns: 46rem 1fr 1fr;
+  }
+
+  .power__city {
+    width: 42rem;
+    height: 41.5rem;
+  }
+
+  .power__first {
+    grid-area: first;
+    justify-self: flex-end;
+    align-self: center;
+    width: 97.8rem;
+  }
+
+  .final {
+    justify-content: space-around;
+  }
+
+  .final__img{
+    width: 34.8rem;
+    height: 21.4rem;
+  }
+
+  .final__wrapper--text{
+    margin-left: 5rem;
+  }
+
+  .final__wrapper--quote{
+    margin-left: -2rem;
+  }
+
+  .footer{
+    width: 150rem;
+  }
+
+}
+
+@media screen and (max-width: 1600px) {
+
+  .intro, .beginning{
+    width: 130rem;
+  }
+
+  .cta {
+    right: 5rem;
+  }
+
+  .beginning__wrapper--text, .confusion__wrapper--text, .society__wrapper--text  {
+    font-size: 2rem;
+  }
+
+  .confusion {
+    width: 130rem;
+  }
+
+  .firemen {
+    width: 130rem;
+  }
+
+  .society {
+    width: 130rem;
+  }
+
+  .society__city {
+    grid-area: city;
+    user-select: none;
+    width: 38.8rem;
+    height: 53.8rem;
+  }
+
+  .society__wrapper--text {
+    width: 77.8rem;
+  }
+
+  
+  .firemen__wrapper--text {
+    font-size: 2rem;
+  }
+
+  .options__wrapper {
+    width: 16rem;
+    height: 26rem;
+  }
+
+  .power {
+    display: grid;
+    grid-template-columns: 36rem 1fr 1fr;
+    grid-template-rows: 30rem 1fr 30rem;
+  }
+
+  .power__text {
+    font-size: 2rem;
+  }
+
+  .power__first {
+    width: 77.8rem;
+  }
+
+  .final {
+    width: 130rem;
+  }
+
+  .final__wrapper--text{
+    font-size: 2rem;
+  }
+
+  .final__wrapper--quote{
+    font-size: 3rem;
+    margin-left: 8rem;
+  }
+
+  .end, .footer{
+    width: 130rem;
+  }
+
+}
+
+@media screen and (max-width: 1440px) {
+
+  .intro, .beginning, .society, .confusion, .final, .end, .footer{
+    width: 120rem;
+  }
+
+  .cta{
+    display: none;
+  }
+
+  .beginning__img {
+    margin-top: -2rem;
+    width: 115.6rem;
+    height: 37.1rem;
+  }
+
+  .confusion__img {
+    width: 17.7rem;
+    height: 32.1rem;
+  }
+
+  .society {
+    margin-top: 8rem;
+  }
+
+  .society__city {
+    grid-area: city;
+    user-select: none;
+    width: 28.8rem;
+    height: 40.8rem;
+  }
+
+
+  .society__wrapper--text {
+    margin-top: 5rem;
+  }
+
+  .firemen__alignment, .firemen__person{
+    width: 27.7rem;
+    height: 76.6rem;
+  }
+
+  .firemen {
+    width: 120rem;
+    margin-top: 8rem;
+  }
+
+  .firemen__wrapper--text {
+    font-size: 2rem;
+    width: 77.8rem;
+  }
+
+  .firemen__fire {
+    width: 80rem;
+    margin-top: 6rem;
+  }
+
+  .power__2 {
+    display: none;
+  }
+
+  .power__third {
+    width: 77.8rem;
+    margin-left: 6rem;
+  }
+
+  .final__wrapper--text{
+    font-size: 2rem;
+    width: 67.8rem;
+  }
+  
+}
+
+@media screen and (max-width: 1280px) {
+
+  .intro, .beginning, .confusion, .society, .firemen, .final, .footer {
+    width: 100rem;
+  }
+
+  .intro__title--img{
+    width: 94.6rem;
+    height: 13.1rem;
+  }
+
+  .beginning__img {
+    margin-top: -2rem;
+    width: 90.6rem;
+    height: 34.1rem;
+    margin-left: 6rem;
+  }
+
+  
+  .beginning__wrapper--text-1 {
+    width: 80rem;
+  }
+  
+  .beginning__wrapper--text-2 {
+    width: 90rem;
+    margin-bottom: 4rem;
+  }
+
+  .beginning__wrapper--text {
+    margin-left: 4rem;
+  }
+
+  .confusion__wrapper--text {
+    width: 57.8rem;
+  }
+
+  .confusion{
+    margin-top: 6rem;
+  }
+
+  .society{
+    margin-top: 10rem;
+  }
+
+  .confusion {
+    justify-content: space-around;
+  }
+
+  .confusion__img {
+    margin-top: 0rem;
+  }
+
+  .society__wrapper--text {
+    width: 57.8rem;
+  }
+
+  .society__city {
+    margin-top: 10rem;
+  }
+
+  .society__fire {
+    width: 60rem;
+  }
+
+  .firemen__alignment, .firemen__person{
+    width: 22.7rem;
+    height: 62.6rem;
+    margin-top: 6rem;
+  }
+
+  .firemen__wrapper--options{
+    margin-left: 5rem;
+  }
+
+  .options__wrapper {
+    background-color: black;
+    color: white;
+    border: 0.2rem solid white;
+    padding: 1rem 2rem;
+    outline: none;
+    cursor: pointer;
+    margin-left: 2rem;
+    width: 12rem;
+    height: 26rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .options__wrapper--label{
+    margin-top: 1rem;
+  }
+
+  .smaller{
+    width: 10rem;
+  }
+
+  .firemen__fire {
+    width: 60rem;
+  }
+
+  .firemen__wrapper--text {
+    width: 57.8rem;
+    margin-left: 5rem;
+  }
+
+  .power {
+    grid-template-columns: 36rem 1fr 1fr;
+  }
+
+  .power__1{
+    display: none;
+  }
+
+  .power__third {
+    width: 50.8rem;
+  }
+
+  .final__wrapper--text{
+    width: 57.8rem;
+  }
+
+  .end__img-right{
+    display: none;
+  }
+
+  .end{
+    width: 90rem;
+  }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+  .smalDissapear{
+    display: none;
+  }
+
+
+  .intro__title--img{
+    width: 54.6rem;
+    height: 8.1rem;
+  }
+
+  .intro{
+    width: 70rem;
+  }
+
+  .beginning{
+    width: 70rem;
+  }
+
+  .beginning__wrapper--text-1 {
+    width: 60rem;
+  }
+  
+  .beginning__wrapper--text-2 {
+    width: 50rem;
+    margin-bottom: 4rem;
+  }
+
+  .beginning__img {
+    width: 60.6rem;
+    height: 28.1rem;
+  }
+
+  .confusion{
+    width: 70rem;
+  }
+  
+  .confusion__wrapper--text {
+    width: 46.8rem;
+  }
+
+  .society{
+    width: 70rem;
+  }
+
+  .society__city{
+    margin-left: -10rem;
+    margin-top: 18rem;
+  }
+
+  .society__wrapper--text {
+    width: 44.8rem;
+  }
+
+  .firemen__wrapper--text {
+    width: 40.8rem;
+    margin-left: 5rem;
+  }
+
+  .smaller{
+    width: 10rem;
+  }
+
+  .options__wrapper {
+    background-color: black;
+    color: white;
+    border: 0.1rem solid white;
+    padding: 0.5rem 1rem;
+    outline: none;
+    cursor: pointer;
+    margin-left: 2rem;
+    width: 10rem;
+    height: 26rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .options__wrapper--label{
+    margin-top: 1rem;
+  }
+
+  .firemen__wrapper--options{
+    margin-left: 2rem;
+  }
+
+  .firemen{
+    width: 70rem;
+  }
+
+  .firemen__alignment, .firemen__person{
+    width: 16.7rem;
+    height: 45.6rem;
+    margin-top: 6rem;
+  }
+
+  .firemen__fire {
+    width: 40rem;
+    margin-bottom: 2rem;
+  }
+
+  .power {
+    grid-template-columns: 12rem 1fr 1fr;
+    grid-template-areas:
+    'first first first'
+    'city second 1'
+    'city third third';
+  }
+
+  .power__text--big {
+    font-size: 3rem;
+  }
+
+  .power__first {
+    width: 67.8rem;
+    margin-right: 4rem;
+  }
+
+  .power__city{
+    position: relative;
+    left: -26rem;
+  }
+
+  .final{
+    width: 70rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 14rem;
+  }
+
+  .final__wrapper--text, .final__wrapper--quote{
+    margin-left: 0rem;
+  }
+
+  .end__wrapper--title{
+    font-size: 2.4rem;
+  }
+
+  .end__wrapper--text{
+    font-size: 2rem;
+  }
+
+  .end__wrapper{
+    margin-bottom: 8rem;
+  }
+
+  .end{
+    width: 70rem;
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: center;
+    align-items: center;
+  }
+
+  .footer{
+    width: 70rem;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .intro, .beginning{
+    width: 90vw;
+  }
+
+  .intro__title--subtitle{
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .beginning__wrapper{
+    width: 90vw;
+  }
+
+  .beginning__wrapper--text-1, .beginning__wrapper--text-2{
+    width: 90vw;
+    margin-left: 0rem;
+  }
+
+  .beginning__img{
+    margin-left: 0rem;
+    width: 90vw;
+    height: 35vw;
+  }
+
+  .confusion{
+    width: 90vw;
+    flex-direction: column;
+  }
+
+  .confusion__wrapper{
+    width: 90vw;
+  }
+
+  .confusion__wrapper--text-1, .confusion__wrapper--text {
+    width: 90vw;
+  }
+
+  .confusion__img{
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+  }
+
+  .society__fire{
+    display: none;
+  }
+
+  .society{
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .society__wrapper{
+    margin-left: 0;
+  }
+
+  .society__city{
+    margin-top: 3rem;
+    margin-left: -20rem;
+    margin-bottom: -10rem;
+  }
+
+  .society__wrapper--text-1, .society__wrapper--text{
+    width: 90vw;
+  }
+
+  .firemen__fire{
+    display: none;
+  }
+
+  
+  .options__wrapper {
+    background-color: black;
+    color: white;
+    border: 0.2rem solid white;
+    padding: 1rem 2rem;
+    outline: none;
+    cursor: pointer;
+    margin-left: 1rem;
+    width: 9rem;
+    height: 11rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .smaller{
+    width: 4rem;
+  }
+
+  .smallerp{
+    width: 2rem;
+    height: 4rem;
+  }
+
+  .firemen{
+    width: 90vw;
+  }
+
+  .firemen__wrapper--text{
+    margin: 0;
+    margin-right: 2rem;
+  }
+
+  .firemen__wrapper--options{
+    margin-left: 0;
+  }
+
+  .btn-helmet{
+    margin-left: 0;
+  }
+
+  .power{
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+ 
+    margin: 0 auto;
+    margin-top: 8rem;
+  }
+
+  .firemen__person, .firemen__alignment{
+    margin-top: -4rem;
+  }
+
+  .power__first, .power__third, .power__second{
+    margin: 0;
+    text-align: start;
+    width: 90vw;
+  }
+
+  .power__second{
+    font-size: 2.4rem;
+    margin: 2rem 0;
+  }
+
+  .power__city{
+    position: relative;
+    left: -4rem;
+  }
+
+  .final{
+    width: 90vw;
+    text-align: start;
+  }
+
+  .final__wrapper--quote{
+    font-size: 2.4rem;
+    margin: 2rem 0;
+  }
+
+  .final{
+    margin-top: 8rem;
+    margin-bottom: 6rem;
+  }
+
+  .end{
+    width: 90vw;
+  }
+
+  .footer{
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 640px) {
+
+  .intro__title--img{
+    width: 34.6rem;
+    height: 4.8rem;
+  }
+
+  .intro__title {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .intro__title--subtitle {
+    text-align: start;
+    line-height: 1.6;
+  }
+
+  .beginning__img{
+    margin-left: -55vw;
+    width: 60rem;
+    height: 26rem;
+  }
+
+  .society__city{
+    margin-top: 3rem;
+    margin-left: 0rem;
+    margin-bottom: -10rem;
+  }
+
+  .firemen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+  }
+
+  .firemen__wrapper--options{
+  }
+
+  .firemen__alignment, .firemen__person{
+    width: 26.7rem;
+    height: 70.6rem;
+    margin-top: 4rem;
+  }
+
+  .firemen__wrapper--text{
+    margin-right: 0rem;
+  }
+
+  .final__wrapper--text{
+    width: 90vw;
+  }
+
+  .end__wrapper--text{
+    width: 90vw;
+  }
+
+  .firemen__person-wrapper {
+    grid-area: person;
+    margin-top: 0rem;
+  }
+
+  .firemen__wrapper--text, firemen__wrapper--options {
+    width: 90vw;
+  }
+
+  .options__wrapper {
+    background-color: black;
+    color: white;
+    border: 0.2rem solid white;
+    padding: 1rem 2rem;
+    outline: none;
+    cursor: pointer;
+    margin-left: 1rem;
+    width: 8rem;
+    height: 11rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 440px) {
+
+  .beginning__img{
+    margin-left: -100vw;
+    width: 60rem;
+    height: 26rem;
+  }
+
+
+  .power__city{
+    position: relative;
+    left: -16rem;
+  }
+
+  .options__wrapper {
+    background-color: black;
+    color: white;
+    border: 0.2rem solid white;
+    padding: 1rem 2rem;
+    outline: none;
+    cursor: pointer;
+    margin-left: 1rem;
+    width: 6rem;
+    height: 11rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .end__img-left{
+    width: 23.2rem;
+    height: 28.8rem;
+  }
+
+  .final__img{
+    width: 24.8rem;
+    height: 16.4rem;
+  }
+
+  .intro__title--img{
+    width: 28.6rem;
+    height: 4.2rem;
+  }
+
+  .intro__title--subtitle {
+    text-align: center;
+    line-height: 1.6;
+    font-size: 1.6rem;
+  }
+
+  .intro__nav{
+    margin-top: 3rem;
+  }
+
+  .intro__scroller{
+    margin-bottom: 3rem;
+  }
+
+  .beginning__wrapper--text-1, .beginning__wrapper--text-2, confusion__wrapper--text-1, .confusion__wrapper--text, .society__wrapper--text-1, .society__wrapper--text, .firemen__wrapper--text, .options__wrapper--label, .power__first, .power__third, .final__wrapper--text, .end__wrapper--text, .footernav__list--link{
+    font-size: 1.6rem;
   }
 }

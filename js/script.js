@@ -135,7 +135,7 @@
 
   const handleScrollClick = () => {
     window.scrollTo({
-      top: 860,
+      top: 200,
       left: 0,
       behavior: 'smooth'
     });
